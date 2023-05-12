@@ -1,0 +1,38 @@
+<button class="btn-back" mat-icon-button type="button" title="Back to Users" (click)="goBack()">
+      <mat-icon>arrow_back</mat-icon>
+</button>
+
+<div class="container" *ngIf="characterDetail">
+      <div class="image">
+            <img src="{{characterDetail.image}}">
+      </div>
+      <mat-card class="mat-card">
+            <mat-card-content>
+                  <h1 style="text-align: center;">Details</h1>
+                  <div style="display: flex;">
+                        <h1>Name:</h1><span style="margin-top: 8px; margin-left: 5px;">{{characterDetail.name}}</span>
+                  </div>
+                  <div style="display: flex;">
+                        <h1>Species:</h1><span
+                              style="margin-top: 8px; margin-left: 5px;">{{characterDetail.species}}</span>
+                  </div>
+                  <div style="display: flex;">
+                        <h1>Status:</h1><span
+                              style="margin-top: 8px; margin-left: 5px;">{{characterDetail.status}}</span>
+                  </div>
+                  <div style="display: flex;">
+                        <h1>Origin:</h1><span
+                              style="margin-top: 8px; margin-left: 5px;">{{characterDetail.origin?.name}}</span>
+                  </div>
+                  <div style="display: flex;">
+                        <h1>Location:</h1><span
+                              style="margin-top: 8px; margin-left: 5px;">{{characterDetail.location?.name}}</span>
+                  </div>
+                  <div style="display: flex;">
+                        <h1>Gender:</h1><span
+                              style="margin-top: 8px; margin-left: 5px;">{{characterDetail.gender}}</span>
+                  </div>
+            </mat-card-content>
+      </mat-card>
+
+</div>

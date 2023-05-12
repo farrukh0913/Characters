@@ -1,0 +1,52 @@
+.btn-back {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  &:hover {
+    mat-icon {
+      cursor: pointer;
+      color: #FFd701;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin: 10px;
+}
+
+.image {
+  background-color: darkgray;
+  border-radius: 20px;
+  width: 362px;
+  height: 351px;
+  margin-top: 40px;
+
+  img {
+    margin: 28px;
+    border-radius: 20px;
+    width: 85%;
+    height: 85%;
+  }
+}
+
+.mat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  margin-left: 40px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+span {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}

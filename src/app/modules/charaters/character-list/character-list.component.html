@@ -1,0 +1,27 @@
+<mat-card class="mat-card" *ngFor="let charcter of charcters">
+  <mat-card-content class="card-container">
+    <div class="desc-bg">
+
+      <div class="container">
+        <div class="image" title="Click for Details">
+          <img src="{{ charcter.image }}" (click)="openDetailPage(charcter.id)" />
+        </div>
+        <div class="data-des">
+          <div style="margin-left: 20px;">
+            <h1 class="itemName">{{ charcter.name }}</h1>
+            <div style="display: flex; margin-top: -10px;">
+              <span class="dot"></span>
+              <h3 class="desc" style="margin-top: -1px; margin-left: 7px;">{{charcter.status}}&nbsp;- {{
+                charcter.species }}</h3>
+            </div>
+            <h2 class="heading">Last Known Location:</h2>
+            <h3 class="desc">{{ charcter.location.name }}</h3>
+            <h2 class="heading">First seen In:</h2>
+            <h3 class="desc">{{ charcter.origin.name }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </mat-card-content>
+</mat-card>
